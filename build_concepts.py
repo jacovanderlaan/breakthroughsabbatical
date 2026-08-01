@@ -32,7 +32,7 @@ except ImportError:
 HERE = Path(__file__).parent
 SRC = Path(os.environ.get("JVDL_LIFE_CONCEPTS", "W:/systems/concepts"))
 OUT = HERE / "concepts"
-BASE_URL = os.environ.get("JVDL_LIFE_BASE", "https://life.jacovanderlaan.com").rstrip("/")
+BASE_URL = os.environ.get("JVDL_LIFE_BASE", "https://breakthroughsabbatical.com").rstrip("/")
 
 # Category order for the index. Any category found but not listed is appended,
 # so a new category can't silently drop a concept.

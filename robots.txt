@@ -1,4 +1,4 @@
-# ⚠️ TESTFASE — indexering UIT tot life.jacovanderlaan.com live is.
+# ⚠️ TESTFASE — indexering UIT tot breakthroughsabbatical.com live is.
 # Deze site draait tijdelijk op github.io om te testen/doorontwikkelen.
 # Bij go-live: vervang dit bestand door robots.txt.golive (crawlers weer welkom).
 User-agent: *

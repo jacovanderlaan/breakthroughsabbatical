@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" width="720" height="460"
+     role="img" aria-label="Breakthrough Sabbatical — Clear the old.">
+  <title>Breakthrough Sabbatical</title>
+
+  <!--
+    Same lockup construction as the Modeling sibling: mark, wordmark, tagline
+    between rules. Only the shape, the accent colour and the words differ.
+
+    ⚠️ Type is live text, not outlines. Convert <text> to paths before sending
+    this anywhere it will be printed or embedded off-site.
+  -->
+
+  <g transform="translate(260 20)">
+    <g fill="none" stroke="#b4541e" stroke-width="16" stroke-linecap="butt">
+      <path d="M 163.1 115.7 A 65 65 0 1 0 115.7 163.1" />
+    </g>
+    <rect x="153" y="153" width="28" height="28" fill="#b88a1b" />
+  </g>
+
+  <!-- Wordmark: ink on top, terracotta below — the site's own hierarchy. -->
+  <text x="360" y="300" text-anchor="middle"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="76" font-weight="700" letter-spacing="1"
+        fill="#1c1917">BREAKTHROUGH</text>
+
+  <text x="360" y="368" text-anchor="middle"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="52" font-weight="400" letter-spacing="13"
+        fill="#b4541e">SABBATICAL</text>
+
+  <!--
+    "CLEAR THE OLD." at 22/6 measures ~232 px, spanning x 244..476.
+    Rules stop 24 px clear on each side so they never strike the letters.
+  -->
+  <g stroke="#b88a1b" stroke-width="2.5">
+    <line x1="147" y1="412" x2="220" y2="412" />
+    <line x1="500" y1="412" x2="573" y2="412" />
+  </g>
+  <text x="360" y="419" text-anchor="middle"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="22" font-weight="600" letter-spacing="6"
+        fill="#b88a1b">CLEAR THE OLD.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200"
+     role="img" aria-label="Breakthrough Sabbatical mark">
+  <title>Breakthrough Sabbatical</title>
+
+  <!--
+    The subject is not a model but a LOOP: work, habits, the week that feeds
+    itself. A vicious circle. The sabbatical is where it is broken open.
+
+    So the family runs:
+      Modeling    square  + corner cut away  → structure, opened
+      Sabbatical  circle  + arc cut away     → the loop, opened
+    Same idea, same stroke weight, same gold escaping. Different shape,
+    different meaning: a square is built, a circle just keeps going.
+
+    The gold square sits square-on and at rest, not rotated mid-flight like
+    the sibling's diamond — you are not bursting out of a sabbatical, you have
+    stepped out of the loop and stopped.
+
+    Geometry: circle r=65 centred (100,100), stroke 16. The arc is drawn from
+    (163.1,115.7) counter-clockwise all the way round to (115.7,163.1),
+    leaving a 62° opening centred on the 45° axis (lower right). The gold
+    square is centred at (167,167) — on that same 45° axis, so it reads as
+    having left through the gap rather than sitting beside it.
+  -->
+
+  <g fill="none" stroke="#b4541e" stroke-width="16"
+     stroke-linecap="butt">
+    <!-- 298° of arc: everything except the opening. -->
+    <path d="M 163.1 115.7 A 65 65 0 1 0 115.7 163.1" />
+  </g>
+
+  <!-- Out of the loop, at rest, on the axis of the opening. -->
+  <rect x="153" y="153" width="28" height="28" fill="#b88a1b" />
+</svg>

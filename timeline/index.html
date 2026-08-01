@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" /><!-- TESTPHASE-NOINDEX -->
+<title>Timeline — Jaco van der Laan &amp;middot; Breakthrough Sabbatical</title>
+<meta name="description" content="How the thinking behind Jaco van der Laan &amp;middot; Breakthrough Sabbatical developed, in order." />
+<link rel="canonical" href="https://breakthroughsabbatical.com/timeline/" />
+<meta property="og:title" content="Timeline — Jaco van der Laan &amp;middot; Breakthrough Sabbatical" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://breakthroughsabbatical.com/timeline/" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../assets/site.css" /></head>
+<body><header class="site"><div class="wrap"><a class="brand" href="../index.html">Jaco van der Laan &middot; <span class="abbr">Breakthrough Sabbatical</span></a>
+<nav class="main">
+<span class="navgroup"><button class="navtop" type="button" aria-haspopup="true">The year</button><span class="navmenu">
+<a href="../stage/index.html">Stage</a>
+<a href="../film/index.html">Film</a>
+<a href="../music/index.html">Music</a>
+<a href="../things/index.html">Things</a>
+<a href="../practice/index.html">Practice</a>
+<a href="../reading/index.html">Reading</a>
+<a href="../rotterdam/index.html">Rotterdam</a>
+</span></span>
+<a class="navtop" href="../concepts/index.html">Principles</a>
+<a class="navtop on" href="../timeline/index.html">Timeline</a>
+<a class="cta" href="https://structurebeatsmagic.com">The family &rarr;</a></nav></div></header>
+<div class="hero wrap listing-head">
+  <div class="listing-head-text">
+    <div class="eyebrow">Timeline</div>
+    <h1>Watch the work unfold</h1>
+    <p class="lede">Not announcements — the working record. Every concept as it
+    was named, every article as it was written, every pattern as it was
+    recognised, together with the readings, sessions and second thoughts that
+    prompted them. Most of it is small. That is the point: the thinking shows
+    in the sequence, not in any one entry. Newest first.</p>
+  </div>
+  
+</div>
+<section class="wrap">
+<div class="tl">
+  <aside class="tl-side">
+    <div class="bw-side-h">Filter</div>
+    <div class="bw-fgroup"><div class="bw-flabel">Kind</div><label class="bw-f"><input type="checkbox" data-filter="kind" value="decision" /><span>Decision</span><span class="bw-n">1</span></label></div><div class="bw-fgroup"><div class="bw-flabel">Day</div><label class="bw-f"><input type="checkbox" data-filter="month" value="2026-08-01" /><span>2026-08-01</span><span class="bw-n">1</span></label></div>
+  </aside>
+  <div class="tl-main"><article class="tl-entry" data-kind="decision"><div class="tl-meta"><time>2026-08-01</time><span class="tl-kind">Decision</span></div><h3>Not a research sabbatical, then not an ordinary one either</h3><p class="tl-source">Looking up what kinds of sabbatical exist, and finding a typology with a gap in it — achiever, explorer, burned-out (HBR, 2023), plus the by-purpose split into research, professional development and personal growth.</p><p>The year started under a borrowed label. Research sabbatical was a real category and the closest fit on offer, so the site said &quot;Not a research sabbatical&quot; — positioning itself inside a framework by arguing with one of its entries. That held until the breakthrough wording arrived and made the borrowing visible: this year is not a variant of an existing type, it is one the typology does not have. Achiever is too narrow, explorer too aimless, burned-out plainly wrong. The homepage now says &quot;Not an ordinary sabbatical&quot;, which trades precision for reach — most readers have never met the categories, but everyone has a picture of a year off, and that picture is what the year argues with. The sharper claim is still sitting unused: three types exist and none of them fit.</p></article></div>
+</div>
+</section>
+<footer><div class="wrap"><p><span class="badge">Test phase</span> &nbsp;
+Part of the <a href="https://structurebeatsmagic.com">Structure Beats Magic</a> family.</p></div></footer>
+<script>
+// filter by kind and by month — plain DOM, no data layer: the entries are
+// already in the HTML, which is what makes this page indexable (ADR-129)
+document.querySelectorAll('[data-filter]').forEach(function (cb) {
+  cb.addEventListener('change', function () {
+    var kinds = [].filter.call(document.querySelectorAll('[data-filter="kind"]:checked'), Boolean).map(function (x) { return x.value; });
+    var months = [].filter.call(document.querySelectorAll('[data-filter="month"]:checked'), Boolean).map(function (x) { return x.value; });
+    document.querySelectorAll('.tl-entry').forEach(function (el) {
+      var k = el.getAttribute('data-kind');
+      var m = el.querySelector('time').textContent.slice(0, 10);
+      var ok = (!kinds.length || kinds.indexOf(k) > -1) && (!months.length || months.indexOf(m) > -1);
+      el.style.display = ok ? '' : 'none';
+    });
+  });
+});
+</script>
+</body></html>

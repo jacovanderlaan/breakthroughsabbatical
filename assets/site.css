@@ -471,3 +471,22 @@ footer.site .fam a{margin-right:16px}
   nav.site a{margin-left:14px;font-size:14px}
   .hero{padding:48px 0 28px}
 }
+
+/* ---------------------------------------------------------------------------
+   Manifesto. Holstee's version works partly because it is letterpress — the
+   words have physical weight. On screen that means giving the type room and
+   getting out of its way: no card, no border, no icon. Line breaks are in the
+   markup because where a line ends is part of the writing, not a reflow
+   decision.
+   --------------------------------------------------------------------------- */
+.manifesto{max-width:34rem;padding-top:8px;padding-bottom:72px}
+.manifesto p{font-size:19px;line-height:1.62;margin:0 0 1.5em;color:var(--ink)}
+.manifesto .m-open,
+.manifesto .m-close{font-size:30px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.manifesto .m-open{margin-bottom:1.2em}
+.manifesto .m-close{margin-top:1.6em;color:var(--accent)}
+.manifesto .m-note{font-size:14px;color:var(--ink-faint);margin-top:3.5em;line-height:1.5}
+@media (max-width:640px){
+  .manifesto p{font-size:17px}
+  .manifesto .m-open,.manifesto .m-close{font-size:25px}
+}

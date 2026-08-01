@@ -490,3 +490,11 @@ footer.site .fam a{margin-right:16px}
   .manifesto p{font-size:17px}
   .manifesto .m-open,.manifesto .m-close{font-size:25px}
 }
+
+/* The poster photograph. Narrower than the text column and centred: it is an
+   object on a wall, not a diagram, and it should read as one. */
+.manifesto .poster{max-width:26rem;margin:24px auto 40px}
+.manifesto .poster img{width:100%;height:auto;border-radius:6px;
+  box-shadow:0 14px 40px rgba(28,25,23,.14)}
+.manifesto h1{font-size:32px;line-height:1.2;margin:0 0 8px}
+.manifesto h2{font-size:22px;margin:2.5em 0 .6em}

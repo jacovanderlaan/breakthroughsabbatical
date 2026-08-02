@@ -1,0 +1,23 @@
+<div id="browse" data-page-type="habits"></div>
+<div class="bw-fallback">
+  <p class="muted">All items:</p>
+  <ul class="artlist">
+    <li><a href="../habits/close-the-day.html">Close the day before opening the next.</a> &mdash; <span class="muted">Loose captures get filed, or they stop being findable.</span></li>
+    <li><a href="../habits/one-image-at-a-time.html">Regenerate one image at a time, never a batch.</a> &mdash; <span class="muted">Generation is non-deterministic; --force overwrote an approved hero.</span></li>
+    <li><a href="../habits/daily-note-first.html">The daily note comes first.</a> &mdash; <span class="muted">Before status, before planning, before answering — read the day.</span></li>
+    <li><a href="../habits/verify-on-fresh-output.html">Verify on fresh output, not on what the script printed.</a> &mdash; <span class="muted">A build that reports success can still produce the wrong thing.</span></li>
+    <li><a href="../habits/walk-without-a-podcast.html">Walk without input sometimes.</a> &mdash; <span class="muted">Nothing joins up while something else is talking.</span></li>
+    <li><a href="../habits/write-the-decision-down.html">Write the decision down while the options are still warm.</a> &mdash; <span class="muted">The rejected options are the part that gets lost.</span></li>
+  </ul>
+</div>
+<script type="module">
+  import { initBrowse } from "../assets/browse.js";
+  initBrowse("#browse", {
+    data: "../data/content_item.parquet",
+    base: "../",
+    assets: "../assets/",
+    pageType: "habits",
+    itemTypes: ["habit"],
+    defaults: {"view": "list", "sort": "title"}
+  }).then(() => document.body.classList.add("bw-ready"));
+</script>

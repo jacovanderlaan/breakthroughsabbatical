@@ -1,0 +1,24 @@
+<div id="browse" data-page-type="models"></div>
+<div class="bw-fallback">
+  <p class="muted">All items:</p>
+  <ul class="artlist">
+    <li><a href="../models/compounding.html">Compounding</a> &mdash; <span class="muted">Small consistent returns beat large occasional ones, given time.</span></li>
+    <li><a href="../models/law-of-attraction.html">Deliberate focus</a> &mdash; <span class="muted">Attention is directional, and what you rehearse you get more of.</span></li>
+    <li><a href="../models/inversion.html">Inversion</a> &mdash; <span class="muted">Ask what would guarantee failure, then avoid that.</span></li>
+    <li><a href="../models/second-brain.html">Second brain</a> &mdash; <span class="muted">Knowledge you do not have to hold in your head to be able to use.</span></li>
+    <li><a href="../models/start-with-why.html">Start with why</a> &mdash; <span class="muted">The reason comes first, or the what never lands.</span></li>
+    <li><a href="../models/systems-not-goals.html">Systems, not goals</a> &mdash; <span class="muted">A goal is a state you might reach; a system is what you do repeatedly.</span></li>
+    <li><a href="../models/zettelkasten.html">Zettelkasten</a> &mdash; <span class="muted">Small notes that link, so structure emerges instead of being imposed.</span></li>
+  </ul>
+</div>
+<script type="module">
+  import { initBrowse } from "../assets/browse.js";
+  initBrowse("#browse", {
+    data: "../data/content_item.parquet",
+    base: "../",
+    assets: "../assets/",
+    pageType: "models",
+    itemTypes: ["model"],
+    defaults: {"view": "cards", "sort": "title"}
+  }).then(() => document.body.classList.add("bw-ready"));
+</script>

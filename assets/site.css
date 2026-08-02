@@ -152,6 +152,15 @@ a.navtop.on{text-decoration:underline;text-underline-offset:6px;
 .navgroup > .navtop.on{text-decoration:none;border-bottom:2px solid var(--accent);
   padding-bottom:2px}
 
+/* ⚠️ Two conventions exist for "this is the current page": the generated nav
+   emits `.navtop.on`, hand-written headers use `.active`. Rather than rewrite
+   twenty pages, style both the same — a reader cannot see which class did it,
+   and a half-migrated site should not look half-migrated.
+   breakthroughsabbatical carries both on the same page. */
+nav.site a.active{color:var(--accent);font-weight:600;
+  text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px;
+  border-bottom:0;padding-bottom:0}
+
 /* The brand is a link to the homepage, not a menu item. Browsers underline it
    by default in some resets, which makes it look like the active section. */
 a.brand{text-decoration:none}

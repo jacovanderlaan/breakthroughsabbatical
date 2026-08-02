@@ -1,0 +1,28 @@
+<div id="browse" data-page-type="rules"></div>
+<div class="bw-fallback">
+  <p class="muted">All items:</p>
+  <ul class="artlist">
+    <li><a href="../personal-rules/build-what-you-do-not-need.html">rule-build-what-you-do-not-need</a> &mdash; <span class="muted">Build something you did not have to.</span></li>
+    <li><a href="../personal-rules/do-not-come-back-the-same.html">rule-do-not-come-back-the-same</a> &mdash; <span class="muted">Do not come back the same.</span></li>
+    <li><a href="../personal-rules/do-the-dull-half-first.html">rule-do-the-dull-half-first</a> &mdash; <span class="muted">Do the dull half first.</span></li>
+    <li><a href="../personal-rules/getting-lost-helps-you-find-yourself.html">rule-getting-lost-helps-you-find-yourself</a> &mdash; <span class="muted">Getting lost will help you find yourself.</span></li>
+    <li><a href="../personal-rules/if-you-dont-like-it-change-it.html">rule-if-you-dont-like-it-change-it</a> &mdash; <span class="muted">If you don&#x27;t like something, change it.</span></li>
+    <li><a href="../personal-rules/keep-the-receipts.html">rule-keep-the-receipts</a> &mdash; <span class="muted">Keep the receipts.</span></li>
+    <li><a href="../personal-rules/life-is-simple.html">rule-life-is-simple</a> &mdash; <span class="muted">Life is simple.</span></li>
+    <li><a href="../personal-rules/rest-does-not-get-squeezed.html">rule-rest-does-not-get-squeezed</a> &mdash; <span class="muted">Rest does not get squeezed.</span></li>
+    <li><a href="../personal-rules/say-it-before-it-is-finished.html">rule-say-it-before-it-is-finished</a> &mdash; <span class="muted">Say it out loud before it is finished.</span></li>
+    <li><a href="../personal-rules/stop-over-analysing.html">rule-stop-over-analysing</a> &mdash; <span class="muted">Stop over-analysing.</span></li>
+    <li><a href="../personal-rules/write-it-down-dont-launch-it.html">rule-write-it-down-dont-launch-it</a> &mdash; <span class="muted">Write it down. Don&#x27;t launch it.</span></li>
+  </ul>
+</div>
+<script type="module">
+  import { initBrowse } from "../assets/browse.js";
+  initBrowse("#browse", {
+    data: "../data/content_item.parquet",
+    base: "../",
+    assets: "../assets/",
+    pageType: "rules",
+    itemTypes: ["personal-rule"],
+    defaults: {"view": "list", "sort": "newest"}
+  }).then(() => document.body.classList.add("bw-ready"));
+</script>

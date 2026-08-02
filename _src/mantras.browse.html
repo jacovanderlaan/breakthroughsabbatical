@@ -1,0 +1,23 @@
+<div id="browse" data-page-type="mantras"></div>
+<div class="bw-fallback">
+  <p class="muted">All items:</p>
+  <ul class="artlist">
+    <li><a href="../mantras/clear-the-old.html">mantra-clear-the-old</a> &mdash; <span class="muted">Clear the old to make room for the new.</span></li>
+    <li><a href="../mantras/lost-in-the-right-direction.html">mantra-lost-in-the-right-direction</a> &mdash; <span class="muted">It feels good to be lost in the right direction.</span></li>
+    <li><a href="../mantras/not-yet-is-a-strategy.html">mantra-not-yet-is-a-strategy</a> &mdash; <span class="muted">Not yet&quot; is a strategy.</span></li>
+    <li><a href="../mantras/rest-is-a-third.html">mantra-rest-is-a-third</a> &mdash; <span class="muted">Rest is a third of the work.</span></li>
+    <li><a href="../mantras/structure-beats-magic.html">mantra-structure-beats-magic</a> &mdash; <span class="muted">Structure beats magic.</span></li>
+    <li><a href="../mantras/take-the-time.html">mantra-take-the-time</a> &mdash; <span class="muted">Take the time.</span></li>
+  </ul>
+</div>
+<script type="module">
+  import { initBrowse } from "../assets/browse.js";
+  initBrowse("#browse", {
+    data: "../data/content_item.parquet",
+    base: "../",
+    assets: "../assets/",
+    pageType: "mantras",
+    itemTypes: ["mantra"],
+    defaults: {"view": "cards", "sort": "newest"}
+  }).then(() => document.body.classList.add("bw-ready"));
+</script>
